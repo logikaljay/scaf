@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '18'
-          registry: npm.pkg.github.com
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@logikaljay'
 
       - run: npm ci
