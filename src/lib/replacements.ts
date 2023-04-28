@@ -1,7 +1,7 @@
 import type { ScaffoldVariables } from "../types/variables"
 
 export const fn = {
-  slug: (text: string) => text.replace(/ /g, '-'),
+  slug: (text: string) => encodeURI(text.replace(/ /g, '-')),
   toLowerCase: (text: string) => text.toLowerCase(),
   toUpperCase: (text: string) => text.toUpperCase(),
   toPascalCase: (text: string) => text.toLowerCase()
