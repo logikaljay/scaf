@@ -1,5 +1,5 @@
 {
-  "name": "scaf",
+  "name": "@logikaljay/scaf",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
