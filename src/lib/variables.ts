@@ -1,3 +1,6 @@
+import type { ScaffoldFile, FileKey } from "@/types/file"
+import type { ScaffoldVariables } from "@/types/variables"
+
 export function getVariables(input: string) {
   let matches = input.match(/{{(\w+|[\w+:\w+]+)}}/g) ?? []
   return matches
@@ -5,7 +8,7 @@ export function getVariables(input: string) {
     .map(match => match.split(':'))
 }
 
-export function getVariableNames(matches: Variables) {
+export function getVariableNames(matches: ScaffoldVariables) {
   return matches.map(([name]) => name)
 }
 

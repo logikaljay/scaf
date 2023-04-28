@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import { doReplacements } from "./replacements"
 import { getVariables } from "./variables"
+import type { ScaffoldFile } from "@/types/file"
 
 export function validateFilesDontExist(files: ScaffoldFile[], input: Record<string, any>) {
   for (let file of files) {

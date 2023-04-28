@@ -5,6 +5,8 @@ import { doReplacements } from "./lib/replacements"
 import { getCLIInput, getPromptInput } from "./lib/input"
 import { validateFilesDontExist } from "./lib/validate"
 
+import type { ScaffoldFile } from "./types/file"
+
 export async function scaffold(files: ScaffoldFile[], variables: string[], argv: RegExp) {
 
   // process the CLI input

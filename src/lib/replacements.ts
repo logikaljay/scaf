@@ -1,3 +1,5 @@
+import type { ScaffoldVariables } from "../types/variables"
+
 export const fn = {
   slug: (text: string) => text.replace(/ /g, '-'),
   toLowerCase: (text: string) => text.toLowerCase(),
@@ -20,7 +22,7 @@ export const fn = {
   toTitleCase: (text: string) => text.replace(/[ A-Z]/g, (_: any, match: any) => (match ? ` ${_.toLowerCase()}` : _.toUpperCase()))
 }
 
-export function doReplacements(input: string, values: Record<string, any>, variables: Variables) {
+export function doReplacements(input: string, values: Record<string, any>, variables: ScaffoldVariables) {
   for (let [variableName, ...modifiers] of variables) {
     if (modifiers.length > 0) {
       let value = values[variableName]
