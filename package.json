@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": ["bin", "dist"],
   "license": "MIT",
   "exports": {
     ".": {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { scaffold } = require('../dist/index.js')
+const { scaffold } = require('./dist/index.js')
 const { files, variables, argv } = require(`${process.cwd()}/template.js`)
 
 scaffold(files, variables, argv)
