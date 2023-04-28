@@ -4,18 +4,10 @@
 
 ## Installation
 
-`scaf` can be installed from npm globally, or run via npx.
-
-### Global
+`scaf` should then be installed as a devDependency.
 
 ```
-$ npm i -g @logikaljay/scaf
-```
-
-### npx
-
-```
-$ npx @logikaljay/scaf
+$ npm i -D @logikaljay/scaf
 ```
 
 ## Setting up your template
