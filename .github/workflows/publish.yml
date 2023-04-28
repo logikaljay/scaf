@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '18'
-          scope: '@logikaljay'
+          scope: '@5oo'
 
       - run: npm ci
       - run: npm run build
