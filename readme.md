@@ -26,9 +26,14 @@ Your template should export `files` and `variables`.
 
 `files` is an array of objects that conform to the `ScaffoldFile` type.
 
-`file.name` `string` The name of the file.
+**`file.name` `string`**
 
-`file.content` `string` The content of the file.
+The name of the file.
+
+**`file.content` `string`**
+
+The content of the file.
+
 
 ### `variables`
 
@@ -36,7 +41,7 @@ Your template should export `files` and `variables`.
 
 When the user supplies data for each variable, they can be modified by modifiers (see below).
 
-### argv
+### `argv`
 
 You can automatically assign variables at runtime by providing arguments to `scaf`.
 
