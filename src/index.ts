@@ -7,15 +7,18 @@ import { validateFilesDontExist } from "./lib/validate"
 
 import type { ScaffoldFile } from "./types/file"
 
-export async function scaffold(files: ScaffoldFile[], variables: string[], argv: RegExp) {
+export async function scaffold(files: ScaffoldFile[], variables: string[], argv: Record<string, RegExp>) {
 
   // process the CLI input
   let cliInput = getCLIInput(argv)
 
-  console.log(`Scaffolding`)
-
   if (cliInput) {
-    console.log(`with input`, JSON.stringify(cliInput, null, 2))
+    console.log(`Scaffolding with input`)
+    console.log('')
+    console.log(JSON.stringify(cliInput, null, 2))
+  }
+  else {
+    console.log(`Scaffolding`)
   }
 
   console.log('')
