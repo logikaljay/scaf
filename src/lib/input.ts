@@ -1,13 +1,17 @@
 import prompt from "prompt"
 
-export function getCLIInput(argv: RegExp) {
+export function getCLIInput(argv: Record<string, RegExp>) {
   let cliInput = {}
   if (argv) {
-    let matches = argv.exec(process.argv.slice(2).join(''))
-    if (matches && matches.groups) {
-      cliInput = {
-        ...matches.groups,
-        endpoint: matches[0]
+    for (let variable in argv) {
+      let regex = argv[variable]
+      let matches = regex.exec(process.argv.slice(2).join(''))
+      if (matches && matches.groups) {
+        cliInput = {
+          ...cliInput,
+          ...matches.groups,
+          [variable]: matches[0],
+        }
       }
     }
   }

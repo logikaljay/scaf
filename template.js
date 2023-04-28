@@ -7,7 +7,9 @@ module.exports.variables = [
   "httpMethod"
 ]
 
-module.exports.argv = /\/api\/(?<service>\w+)\/(?<domain>\w+)\/(?<title>\w+)/i
+module.exports.argv = {
+  endpoint: /\/api\/(?<service>\w+)\/(?<domain>\w+)\/(?<title>\w+)/i
+}
 
 module.exports.files = [{
   name: "./src/{{service:toKebabCase}}/{{domain:toKebabCase}}/{{title:toKebabCase:slug}}/index.ts",
