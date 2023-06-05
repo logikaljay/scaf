@@ -3,6 +3,10 @@
   "bin": {
     "5oo/scaf": "./bin/scaf"
   },
+  "private": "false",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
