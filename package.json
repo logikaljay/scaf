@@ -1,9 +1,9 @@
 {
-  "name": "@logikaljay/scaf",
+  "name": "@5oo/scaf",
   "bin": {
-    "logikaljay/scaf": "./bin/scaf"
+    "5oo/scaf": "./bin/scaf"
   },
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
