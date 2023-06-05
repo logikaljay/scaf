@@ -3,7 +3,6 @@
   "bin": {
     "5oo/scaf": "./bin/scaf"
   },
-  "private": "false",
   "publishConfig": {
     "access": "public"
   },
